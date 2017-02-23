@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/1">
+        <file>file:/C:/Users/jerza/Documents/NetBeansProjects/compiler/src/analyzer/LexicalAnalyzer.java</file>
+        <file>file:/C:/Users/jerza/Documents/NetBeansProjects/compiler/src/util/TokenScanner.java</file>
+        <file>file:/C:/Users/jerza/Documents/NetBeansProjects/compiler/src/statics/Thompson.java</file>
+        <file>file:/C:/Users/jerza/Documents/NetBeansProjects/compiler/src/util/AFD.java</file>
+        <file>file:/C:/Users/jerza/Documents/NetBeansProjects/compiler/src/util/Automaton.java</file>
+        <file>file:/C:/Users/jerza/Documents/NetBeansProjects/compiler/src/util/Exporter.java</file>
+        <file>file:/C:/Users/jerza/Documents/NetBeansProjects/compiler/src/util/Frame.java</file>
+        <file>file:/C:/Users/jerza/Documents/NetBeansProjects/compiler/src/util/HelpingSet.java</file>
+        <file>file:/C:/Users/jerza/Documents/NetBeansProjects/compiler/src/util/HelpingState.java</file>
+        <file>file:/C:/Users/jerza/Documents/NetBeansProjects/compiler/src/util/MyTableRenderer.java</file>
+        <file>file:/C:/Users/jerza/Documents/NetBeansProjects/compiler/src/statics/Files.java</file>
+        <file>file:/C:/Users/jerza/Documents/NetBeansProjects/compiler/src/exception/FormatException.java</file>
+        <file>file:/C:/Users/jerza/Documents/NetBeansProjects/compiler/src/analyzer/Compiler.java</file>
+        <file>file:/C:/Users/jerza/Documents/NetBeansProjects/compiler/src/analyzer/SemanticAnalyzer.java</file>
+        <file>file:/C:/Users/jerza/Documents/NetBeansProjects/compiler/src/analyzer/SyntaxAnalyzer.java</file>
+        <file>file:/C:/Users/jerza/Documents/NetBeansProjects/compiler/src/Main.java</file>
+    </open-files>
+</project-private>
