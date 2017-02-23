@@ -1,0 +1,59 @@
+//Prueba.java
+import java.awt.*;
+import java.awt.geom.Rectangle2D;
+import javax.swing.JFrame;
+
+public  class DibujoFigura extends JFrame{
+        private Figura [] fig;
+        DibujoFigura(String title){
+            super(title); setSize(800, 600); 
+            getContentPane().setBackground(new Color(255, 255, 255));
+            setVisible(true);
+            
+            Bandera ban = new Bandera(200, 40, 20);
+            Bandera ban2 = new Bandera(300, 40, 40);
+            Bandera ban3 = new Bandera(400, 40, 60);
+            Cruz cruz1 = new Cruz(350, 200, 20); Cruz cruz2 = new Cruz(450, 200, 40);
+            Cruz cruz3 = new Cruz(550, 200, 60); Pino p1 = new Pino(350, 400, 60);
+            Pino p2 = new Pino(450, 400, 80); Pino p3 = new Pino(550, 400, 100);
+            Nube nu1 = new Nube(600, 50, 30); Nube nu2 = new Nube(600, 100, 50);
+            Nube nu3 = new Nube(600, 200, 70); Estrella e1 = new Estrella(400, 500, 20);
+            Estrella e2 = new Estrella(450, 500, 40); Estrella e3 = new Estrella(600, 500, 60);
+            
+            fig = new Figura[ 15 ];
+            fig[0] = ban; fig[1] = ban2;  fig[2] = ban3; fig[3] = cruz1; fig[4] = cruz2;
+            fig[5] = cruz3; fig[6] = p1; fig[7] = p2; fig[8] = p3; fig[9] = nu1;
+            fig[10] = nu2; fig[11] = nu3; fig[12] = e1; fig[13] = e2; fig[14] = e3;
+	    
+        }
+public  void paint(Graphics g){
+    super.paint(g);
+    Graphics2D g2 = (Graphics2D)g; 
+    g2.setPaint(new GradientPaint(0, 600,Color.BLUE, 0, 0, Color.BLACK, true ));
+    g2.fill(new Rectangle2D.Double(0, 0, 800, 600));
+    Insets s = getInsets();
+    g.translate(s.left, s.top);
+    Color colores[] = {Color.BLACK, Color.BLUE, Color.CYAN, Color.DARK_GRAY, Color.GRAY,
+             Color.GREEN, Color.LIGHT_GRAY, Color.MAGENTA, Color.ORANGE, Color.PINK, Color.RED, Color.YELLOW} ;
+    Figura F[] = {new Punto(20, 20), new Punto(30, 30), new Punto(40, 40),
+            new Circulo(20, 50, 10), new Circulo(60, 50, 20), new Circulo(120, 50, 30),
+            new Rectangulo(20, 100, 30, 10), new Rectangulo(60, 100, 50, 20), new Rectangulo(120, 100, 60, 30),
+            new Triangulo(30, 150, 40, 60), new Triangulo(120, 150, 60, 90), new Triangulo(250, 150, 80, 120),
+            new Elipse( 20, 250, 50, 20), new Elipse( 90, 250, 100, 50), new Elipse( 220, 250, 120, 50),
+            new Trapecio(20, 350, 20, 60, 20), new Trapecio(100, 350, 30, 90, 40), new Trapecio(210, 350, 50, 110, 60),
+            new TrianguloRect(20, 450, 30, 20), new TrianguloRect(90, 450, 60, 40), new TrianguloRect(200, 450, 80, 60),
+            };
+    for (int i = 0; i < F.length; i++ ) {
+        g.setColor(colores[(int)(Math.random()*colores.length)]);
+			F[i].dibuja(g);
+    }
+    for (int i = 0; i < fig.length; i++) {
+			fig[i].dibuja( g );
+    }
+	}
+	public static void main(String[] args) {
+		DibujoFigura D = new DibujoFigura("Dibujo BRFJ");
+		D.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+    
+	}
+}
